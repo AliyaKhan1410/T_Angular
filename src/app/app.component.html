@@ -1,0 +1,11 @@
+<!-- app.component.html -->
+<app-navbar></app-navbar>
+
+<main>
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="error">{{ error }}</div>
+
+  <app-categories [categories]="categories"></app-categories>
+
+  <app-image-grid [products]="products"></app-image-grid>
+</main>
